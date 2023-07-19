@@ -10,8 +10,6 @@ const uri = `mongodb://${dbIp}:${dbPort}/${dbName}`;
 const options = {
   useUnifiedTopology: true,
   useNewUrlParser: true,
-  keepAlive: true,
-  keepAliveInitialDelay: 270000,
   maxPoolSize: 10
 };
 
