@@ -1,2 +1,2 @@
 # Naver
-Naver, a simple backend service
+Naver, a simple nodejs expressjs backend restful service
