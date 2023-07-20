@@ -5,6 +5,7 @@ const crypto = require('crypto');
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
+    username: 'string',
     email: 'string',
     password: {
         salt: { type: String, required: true },
