@@ -13,6 +13,7 @@ for (const env in envs) {
 };
 
 // define routers
+const loginRouter = require('./modules/Login/route/login');
 const userRouter = require('./modules/User/route/user');
 
 const app = express();
@@ -25,6 +26,7 @@ app.use(cors());
 app.use(helmet());
 
 // use routers defined
+app.use('/api/v1', loginRouter);
 app.use('/api/v1', userRouter);
 
 // catch 404 and forward to error handler
